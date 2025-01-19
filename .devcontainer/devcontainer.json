@@ -1,0 +1,14 @@
+{
+  "name": "Vite + TypeScript Project",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "dbaeumer.vscode-eslint", // 必要に応じて拡張機能を追加
+    "esbenp.prettier-vscode"
+  ],
+  "postCreateCommand": "npm install" // Vite プロジェクトの依存関係をインストール
+}
