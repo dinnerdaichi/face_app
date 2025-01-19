@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import * as faceapi from 'face-api.js';
 
 const FaceRecognition = () => {
-  const [imageUrl, setImageUrl] = useState<string>("");
-  const [inputImage, setInputImage] = useState<HTMLImageElement | null>(null);
+  // const [imageUrl, setImageUrl] = useState<string>("");
+  // const [inputImage, setInputImage] = useState<HTMLImageElement | null>(null);
   const [detections, setDetections] = useState<any>([]);
 
   const videoRef = useRef<HTMLVideoElement | null>(null); // video の参照を管理
