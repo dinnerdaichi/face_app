@@ -58,10 +58,10 @@ const FaceRecognition = () => {
       try {
         console.log('モデル読込中。。');
         // モデルを読み込む
-        await faceapi.nets.ssdMobilenetv1.loadFromUri('../../public/models');
+        await faceapi.nets.ssdMobilenetv1.loadFromUri('/models');
         console.log('ssdMobilenetv1 モデルの読み込み完了');
-        await faceapi.nets.faceLandmark68Net.loadFromUri('../../public/models');
-        await faceapi.nets.faceRecognitionNet.loadFromUri('../../public/models');
+        await faceapi.nets.faceLandmark68Net.loadFromUri('/models');
+        await faceapi.nets.faceRecognitionNet.loadFromUri('/models');
 
         // モデルが全て読み込まれてからカメラを起動
         getVideoStream();
