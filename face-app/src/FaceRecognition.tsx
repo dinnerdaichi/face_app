@@ -46,8 +46,8 @@ const FaceRecognition = () => {
       return;
     }
 
-    const detections = await faceapi.detectAllFaces(video).withFaceLandmarks().withFaceDescriptors();
-    setDetections(detections);
+    const result = await faceapi.detectAllFaces(video).withFaceLandmarks().withFaceDescriptors();
+    setDetections(result);
 
     faceapi.draw.drawDetections(canvas, detections);
     faceapi.draw.drawFaceLandmarks(canvas, detections);
